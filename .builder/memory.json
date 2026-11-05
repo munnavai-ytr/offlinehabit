@@ -1,0 +1,34 @@
+{
+  "appName": "OfflineHabit",
+  "packageName": "com.droidforge.offlinehabit",
+  "architectureSummary": "MVI + Clean Architecture + Compose",
+  "screens": [
+    {
+      "name": "MainScreen",
+      "route": "main",
+      "purpose": "Primary dashboard view with Material 3 card container"
+    }
+  ],
+  "dataModels": [],
+  "dependencies": [
+    "androidx.compose.material3:material3",
+    "androidx.navigation:navigation-compose:2.8.4",
+    "androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7"
+  ],
+  "permissions": [],
+  "decisions": [
+    "Initialized with standard Kotlin Multiplatform & Android Compose conventions.",
+    "Configured for Android 15 (Target SDK 35) with Edge-to-Edge display.",
+    "Adopted Gradle version catalogs (libs.versions.toml) with zero binary dependencies."
+  ],
+  "fileIndex": {
+    "gradle/libs.versions.toml": "Centralized Gradle version catalog",
+    "settings.gradle.kts": "Gradle plugin repositories & project inclusion",
+    "build.gradle.kts": "Root project build script",
+    "app/build.gradle.kts": "App module build script and dependencies",
+    "app/src/main/java/com/droidforge/offlinehabit/MainActivity.kt": "Entry activity with Edge-to-Edge setup",
+    "app/src/main/java/com/droidforge/offlinehabit/ui/screens/MainScreen.kt": "Default entry Compose screen",
+    "app/src/main/java/com/droidforge/offlinehabit/ui/theme/Theme.kt": "Material 3 Dark/Light color scheme"
+  },
+  "lastUpdated": 1793867213638
+}
